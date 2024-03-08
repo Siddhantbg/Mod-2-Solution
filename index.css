@@ -10,41 +10,67 @@ body {
 
 header {
     text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.section {
-    position: relative;
-    width: 100%;
     padding: 20px;
-    border: 1px solid #000;
+    background-color: #f0f0f0;
 }
 
-.section-title {
+h1 {
+    font-size: 2em;
+}
+
+.box {
+    padding: 10px;
+    margin: 10px;
+    background-color: #999999;
+    width: calc(33.33% - 20px);
+    min-width: 200px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+
+}
+
+.box p {
+    margin-top: 40px;
+}
+
+.box .chick {
+    background-color: rgb(230, 123, 123);
+    width: 100px;
     position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px 10px;
-    background-color: #f00;
-    color: #fff;
-    border: 1px solid #000;
+    top: 0px;
+    right: 0px;
+    text-align: center;
 }
 
-@media (min-width: 768px) {
-    .section {
-        width: 50%;
-    }
+.box .beef {
+    background-color: rgb(230, 44, 44);
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: center;
 }
 
-@media (min-width: 992px) {
-    .section {
-        width: 33.33%;
+.box .sushi {
+    background-color: rgb(231, 224, 82);
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+}
+.box1{
+    width: 31%;
+}
+.box2{
+    width: 31%;
+}
+.box3{
+    width: 31%;
+}
+@media screen and (max-width: 767px) {
+    .box {
+        width: calc(50% - 20px);
     }
 }
